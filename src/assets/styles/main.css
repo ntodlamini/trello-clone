@@ -1,0 +1,94 @@
+.board-view {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: black; }
+  .board-view .board-top-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white; }
+    .board-view .board-top-nav h3 {
+      color: white;
+      margin: 0 auto; }
+  .board-view .back-icon {
+    cursor: pointer; }
+  .board-view .list-container {
+    display: flex;
+    flex-direction: row; }
+  .board-view .add-list-container {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    color: #537aa0;
+    margin-top: 20px;
+    align-content: center; }
+    .board-view .add-list-container .add-list {
+      margin-top: 3px;
+      padding-right: 3px; }
+    .board-view .add-list-container .add-list-text {
+      margin: 0 !important;
+      font-size: 16px; }
+  .board-view .list {
+    display: flex;
+    flex-direction: row; }
+
+.card {
+  background-color: white;
+  box-shadow: 2px 2px #888888;
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+  border-radius: 5px;
+  margin: 10px 0px; }
+  .card .card-description {
+    width: 90%;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    cursor: default; }
+  .card .card-actions {
+    display: flex;
+    flex-direction: column;
+    width: 10%; }
+    .card .card-actions .action {
+      color: #000;
+      cursor: pointer; }
+
+.card-list {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width: 200px;
+  color: white;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px; }
+  .card-list .card-list-name {
+    color: black;
+    font-weight: bold;
+    margin: 0 !important;
+    cursor: pointer; }
+  .card-list .list-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid black 1px;
+    justify-content: space-between; }
+  .card-list .close-icon {
+    color: black;
+    cursor: pointer; }
+  .card-list .add-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .card-list .add-container .add-text {
+      margin: 0 !important;
+      font-size: 18px; }
+  .card-list .card-container {
+    min-height: 30px; }

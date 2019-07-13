@@ -1,0 +1,46 @@
+.board-view{
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    .board-top-nav{
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: white;
+        h3{
+        color: white;
+        margin:0 auto;
+        }
+    }
+    .back-icon{
+        cursor: pointer;
+    }
+    .list-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .add-list-container{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        color:#537aa0;
+        margin-top:20px;
+        align-content: center;
+        .add-list{
+            margin-top:3px;
+            padding-right:3px;
+        }
+        .add-list-text{
+            margin: 0 !important;
+            font-size:16px;
+        }
+    }
+    .list{
+        display: flex;
+        flex-direction: row; 
+    }
+}
