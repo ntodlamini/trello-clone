@@ -11,7 +11,7 @@ export default class Board extends React.Component{
                 {
                     name:"New list",
                     id,
-                    cards:[]
+                    cards:[id]
                 }
             ]
         }
