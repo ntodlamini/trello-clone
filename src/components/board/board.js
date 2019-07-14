@@ -34,7 +34,12 @@ export default class Board extends React.Component{
         switch (action) {
             case CARD_ACTIONS.ADD:{
                 let ind=myList.findIndex((item)=>item.id==listId)
-                myList[ind].cards.push({})
+                let id=1;
+                if(myList[ind].cards.length>0){
+                    let lastCard=myList[ind].cards[myList[ind].cards.length-1]
+                    id=lastCard.id+1
+                }
+                myList[ind].cards.push({id})
                 this.setState({list:myList})                
                 break;
             } 
