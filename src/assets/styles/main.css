@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black|Questrial&display=swap");
 .board-view {
   background-color: #282c34;
+  background-image: url(../../assets/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,10 +15,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: white; }
+    color: white;
+    background: #333;
+    border-bottom: 1px solid #444;
+    min-height: 60px; }
     .board-view .board-top-nav h3 {
       color: white;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-family: 'Questrial', sans-serif; }
   .board-view .back-icon {
     cursor: pointer; }
   .board-view .list-container {
@@ -23,9 +32,10 @@
     display: flex;
     flex-direction: row;
     cursor: pointer;
-    color: #537aa0;
+    color: #d5c004;
     margin-top: 20px;
-    align-content: center; }
+    align-content: center;
+    height: fit-content; }
     .board-view .add-list-container .add-list {
       margin-top: 3px;
       padding-right: 3px; }
@@ -69,20 +79,65 @@
     bottom: 0;
     right: 0; }
 
+.home {
+  background-image: url(../../assets/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  .home .header {
+    flex-direction: row;
+    align-items: center;
+    background: #333;
+    border-bottom: 1px solid #444;
+    min-height: 60px; }
+    .home .header .logo {
+      color: white;
+      padding-left: 10px;
+      margin-bottom: 0 !important;
+      padding-top: 10px !important;
+      font-family: 'Archivo Black', sans-serif; }
+  .home .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgba(51, 51, 51, 0.7); }
+  .home .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 50px; }
+  .home .board-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .home .board-icons .page-header {
+      color: white !important;
+      text-align: center;
+      font-family: 'Questrial', sans-serif; }
+
 .card-list {
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   width: 200px;
-  color: white;
+  color: #4e4d4d;
   margin: 20px;
   display: flex;
   flex-direction: column;
-  padding: 10px; }
+  padding: 10px;
+  height: fit-content; }
   .card-list .card-list-name {
     color: black;
     font-weight: bold;
     margin: 0 !important;
     cursor: pointer; }
+  .card-list .card-list-name:hover {
+    border: solid 1px #636262; }
   .card-list .list-nav {
     display: flex;
     flex-direction: row;
@@ -103,3 +158,19 @@
       font-size: 18px; }
   .card-list .card-container {
     min-height: 30px; }
+
+.thumbnail {
+  background-color: white;
+  box-shadow: 2px 2px #888888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  min-height: 70px;
+  border-radius: 0px 5px 0px 5px;
+  margin: 10px 0px;
+  position: relative;
+  cursor: pointer; }
+  .thumbnail .title {
+    margin: 0;
+    font-size: 18px; }
