@@ -12,7 +12,7 @@ export default class Card extends React.Component{
     render(){
         return(
             <div className="card" onMouseEnter={()=>this.setState({showAction:true})} onMouseLeave={()=>this.setState({showAction:false})}>
-                <textarea className="card-description" disabled={!this.state.editCard} defaultValue={this.props.id}></textarea>
+                <textarea className="card-description" disabled={!this.state.editCard} defaultValue={this.props.description}></textarea>
                 {
                     <div className="card-actions">
                     {

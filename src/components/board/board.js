@@ -1,5 +1,6 @@
 import React from "react";
 import List from "../list/list"
+import { getBoard } from "../../services";
 let id=1;
 export const CARD_ACTIONS={ADD:"add",DELETE:"delete",EDIT:"edit",SAVE:"save"}
 
@@ -7,20 +8,21 @@ export default class Board extends React.Component{
     constructor(props) {
         super(props)
         this.state={
-            list:[
-                {
-                    name:"New list",
-                    id,
-                    cards:[{id}]
-                }
-            ]
+            name:"List",
+            list:[]
         }
+    }
+    componentDidMount(){
+        let board=getBoard(this.props.id);
+        //use this.props.id to look in JSON file for board
+        if(board)
+        this.setState({list:board.lists,name:board.name})
     }
 
     onButtonClick(){
         let myList=this.state.list
-        id++;
-        myList.push({name:"New list",id,cards:[]})
+        let id=myList.length>0?myList[myList.length-1].id+1:0;
+        myList.push({name:"List",id,cards:[]})
         this.setState({list:myList})
     }
     removeList(id){
@@ -59,7 +61,7 @@ export default class Board extends React.Component{
         return(
             <div className="board-view">
                 <header className="board-top-nav">
-                    <span className="back-icon" uk-icon="icon: chevron-left; ratio: 2"></span>
+                    <span className="back-icon" uk-icon="icon: chevron-left; ratio: 2" onClick={()=>this.props.onBack()}></span>
                     <h3 className="board-name">{this.props.name}</h3>
                 </header>
                 <div className="list">

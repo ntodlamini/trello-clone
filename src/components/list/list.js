@@ -6,7 +6,7 @@ function List({onClose,onCardAction,cards,id,name}) {
     return(
         <div className="card-list">
             <header className="list-nav">
-                <h5 className="card-list-name">{name + id}</h5>
+                <h5 className="card-list-name"contentEditable="true">{name}</h5>
                 <span className="close-icon" uk-icon="icon: close" onClick={()=>onClose(id)}></span>
             </header>
             <div className="card-container">

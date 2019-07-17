@@ -1,13 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import './assets/styles/main.css';
 
 import Board from "./components/board/board"
+import Home from './components/home/home';
 
 function App() {
   return (
-    <Board/>
+    <Home/>
   );
 }
 
