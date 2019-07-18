@@ -13,9 +13,9 @@
 ## Description
 This web application demonstrates a basic trello clone built on React, without any external UI and routing libraries.
 The application implements the following features:
-- Show a list of boards
+- Shows a list of boards
 - Create a new board
-- Show lists with in a board
+- Shows lists within a board
 - Add a new list to the board
 - Add/Edit a card within a list
 ## Folder Structure
