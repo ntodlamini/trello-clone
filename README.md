@@ -35,10 +35,8 @@ trello-clone/
     App.js
     App.test.js
     assets/
-        bg1.jpg
         bg3.jpg
         bg4.jpg
-        bg5.jpg
         styles/
             main.css
             main.scss
