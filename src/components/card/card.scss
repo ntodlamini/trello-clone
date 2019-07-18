@@ -1,11 +1,12 @@
 .card{
     background-color: white;
-    box-shadow:  2px 2px #888888;
+    box-shadow: 2px 2px #888888;
     display: flex;
     flex-direction: row;
-    min-height: 50px;
-    border-radius: 5px;
+    min-height: 70px;
+    border-radius: 0px 5px 0px 5px;
     margin: 10px 0px;
+    position: relative;
     .card-description{
         width: 90%;
         border: none;
@@ -16,10 +17,23 @@
     .card-actions{
         display: flex;
         flex-direction: column;
-        width: 10%;
+        width: 15%;       
+        .save-icon{
+            color: #32d296 !important;
+        }
+        .edit-icon{
+            color: #2196f3 !important;
+        }
         .action{
             color: #000;
             cursor: pointer;
         }
+    }
+    .delete-icon{
+        margin-top: 15px;
+        color: #e91e63 !important;
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
